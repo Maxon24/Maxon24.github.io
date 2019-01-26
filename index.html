@@ -30,10 +30,12 @@ H1 {
 function func(){
 var n;
 n=document.getElementById("a_znach").value;
-n=n+1;
+f=document.getElementById("b_znach").value;
+n=n+f;
 document.getElementById("a").innerHTML ="<h1>"+"Имя мне легион, ибо нас много "+"<br>"+ n+"</h1>";
 n=Number(document.getElementById("a_znach").value);
-n=n+1;
+f=Number(document.getElementById("b_znach").value);
+n=n+f;
 document.getElementById("a").innerHTML = document.getElementById("a").innerHTML + "<h1>"+"Имя мне легион, ибо нас много "+"<br>"+ n+"</h1>";
 }
 </script>
@@ -41,7 +43,7 @@ document.getElementById("a").innerHTML = document.getElementById("a").innerHTML 
   <body>
     <h1>Hello Plunker!</h1>
     n=<input type="text" value="1" id="a_znach">
-    k=<input type="text" value="4" id="b_znach">
+    f=<input type="text" value="4" id="b_znach">
 <br>
 <br>
 <button onclick="func()">Надо нажать</button>
